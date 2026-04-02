@@ -57,6 +57,176 @@ const plants = [
             "images/pothos1.jpg"
         ],
         notes: "Growing fast! Vines are getting long. Trimmed in February."
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
+    },
+    {
+        name: "Monstera",
+        thumb: "images/monstera1.jpg",
+        photos: [
+            "images/monstera1.jpg",
+            "images/monstera2.jpg",
+            "images/monstera3.jpg"
+        ],
+        notes: "Watered every 1-2 weeks. Loves indirect light. Got a new leaf in March!"
     }
     // Add more plants here...
 ];
