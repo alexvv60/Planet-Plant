@@ -6,8 +6,8 @@
     margin: 0;
     padding: 0;
 }
-
-
+ 
+ 
 /* ── PAGE ─────────────────────────────────────────────
    font-family: font used everywhere
    background-color: page background
@@ -18,8 +18,8 @@ body {
     background-color: #f3f7f0;
     color: #1e1e1e;
 }
-
-
+ 
+ 
 /* ── HEADER ───────────────────────────────────────────
    The green bar at the top.
    Change background-color to any color you want.
@@ -30,27 +30,22 @@ header {
     background-color: #8fbc8f;
     color: white;
 }
-
+ 
 header h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 6px;
 }
-
+ 
 header p {
     font-size: 1rem;
 }
-
-
+ 
+ 
 /* ═══════════════════════════════════════════════════
    MAIN PAGE — plant card grid
 ═══════════════════════════════════════════════════ */
-
-/* ── PLANT GRID ───────────────────────────────────────
-   Responsive grid — fills screen width automatically.
-   gap: space between cards
-   padding: space around the whole grid
-──────────────────────────────────────────────────────── */
+ 
 #plant-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -59,11 +54,7 @@ header p {
     max-width: 1400px;
     margin: 0 auto;
 }
-
-/* ── PLANT CARD ───────────────────────────────────────
-   border-radius: corner roundness (6px = subtle)
-   box-shadow: soft drop shadow under each card
-──────────────────────────────────────────────────────── */
+ 
 .plant-card {
     background: white;
     border: 1px solid #ddd;
@@ -71,29 +62,26 @@ header p {
     text-align: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
     overflow: hidden;
-    cursor: pointer;  /* shows a hand cursor when hovering */
+    cursor: pointer;
 }
-
+ 
 .plant-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.13);
 }
-
-/* The thumbnail photo on each card */
+ 
 .plant-card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
     display: block;
 }
-
-/* The plant name on each card */
+ 
 .plant-card h3 {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 8px 6px;
 }
-
-/* The button on each card */
+ 
 .plant-card button {
     width: 100%;
     padding: 10px;
@@ -103,12 +91,12 @@ header p {
     font-size: 0.9rem;
     cursor: pointer;
 }
-
+ 
 .plant-card button:hover {
     background-color: #7aa87a;
 }
-
-
+ 
+ 
 /* ── IMAGE PLACEHOLDER ────────────────────────────────
    Shows when a plant has no photo yet.
 ──────────────────────────────────────────────────────── */
@@ -124,47 +112,35 @@ header p {
     font-size: 2rem;
     gap: 6px;
 }
-
+ 
 .img-placeholder span {
     font-size: 0.75rem;
 }
-
-/* Larger placeholder for the detail page */
+ 
 .img-placeholder.large {
     height: 260px;
     font-size: 3rem;
 }
-
-
-/* ── EMPTY STATE ──────────────────────────────────────
-   Shown when the plants list is empty.
-──────────────────────────────────────────────────────── */
+ 
 .empty-state {
     text-align: center;
     padding: 60px 20px;
     color: #888;
     grid-column: 1 / -1;
 }
-
-
+ 
+ 
 /* ═══════════════════════════════════════════════════
    DETAIL PAGE — single plant view
 ═══════════════════════════════════════════════════ */
-
-/* ── DETAIL PAGE WRAPPER ──────────────────────────────
-   Centers content and limits width on wide screens.
-   padding: space around the content
-──────────────────────────────────────────────────────── */
+ 
 .detail-page {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 24px 60px;
 }
-
-/* ── BACK BUTTON ──────────────────────────────────────
-   The "← Back to all plants" link at the top.
-   Change color to match your theme if you want.
-──────────────────────────────────────────────────────── */
+ 
+/* Back link */
 .back-button {
     display: inline-block;
     margin-bottom: 20px;
@@ -172,63 +148,138 @@ header p {
     text-decoration: none;
     font-size: 0.95rem;
 }
-
+ 
 .back-button:hover {
     text-decoration: underline;
 }
-
-/* Plant name on the detail page */
+ 
+/* Plant name */
 .detail-page h2 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 4px;
     color: #1e1e1e;
 }
-
-/* Section headings (Notes, Photos) */
-.detail-page h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #444;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.85rem;
+ 
+/* Scientific name shown under the plant name */
+.scientific-name {
+    font-size: 0.95rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 24px;
 }
-
-/* ── NOTES SECTION ────────────────────────────────────
-   The text notes about each plant.
-   Edit notes in plants-data.js, not here.
+ 
+/* ── SECTION BOXES ────────────────────────────────────
+   Each section (Photos, Profile, Watering Log, etc.)
+   sits in its own white box.
 ──────────────────────────────────────────────────────── */
-.detail-notes {
+.detail-section {
     background: white;
     border: 1px solid #ddd;
     border-radius: 6px;
-    padding: 16px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
-
-.detail-notes p {
-    font-size: 1rem;
-    line-height: 1.6;
+ 
+/* Section title bar */
+.detail-section h3 {
+    background-color: #f0f4f0;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 16px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #555;
+}
+ 
+.section-body {
+    padding: 16px;
+}
+ 
+/* ── INFO TABLE ───────────────────────────────────────
+   Used for Profile, Setup, Wishlist sections.
+   Two columns: label on the left, value on the right.
+──────────────────────────────────────────────────────── */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+ 
+.info-table tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+ 
+.info-table tr:last-child {
+    border-bottom: none;
+}
+ 
+.info-table td {
+    padding: 8px 4px;
+    vertical-align: top;
+}
+ 
+.info-label {
+    color: #888;
+    width: 40%;
+    padding-right: 12px;
+}
+ 
+/* ── LOG ENTRIES ──────────────────────────────────────
+   Used for Watering, Fertilizer, Growth logs, etc.
+   Each entry is a dated block.
+──────────────────────────────────────────────────────── */
+.log-entry {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px 0;
+}
+ 
+.log-entry:first-child {
+    padding-top: 0;
+}
+ 
+.log-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+ 
+/* The date shown at the top of each log entry */
+.log-date {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #5a8a5a;
+    margin-bottom: 6px;
+}
+ 
+/* Each row inside a log entry */
+.log-row {
+    font-size: 0.9rem;
     color: #333;
+    margin-bottom: 3px;
+    line-height: 1.5;
 }
-
+ 
+.log-label {
+    color: #888;
+    font-size: 0.85rem;
+}
+ 
+.empty-note {
+    color: #aaa;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+ 
 /* ── PHOTO GALLERY ────────────────────────────────────
    Grid of photos on the detail page.
-   Change minmax(220px, 1fr) to make photos bigger or smaller.
 ──────────────────────────────────────────────────────── */
-.detail-gallery {
-    margin-bottom: 30px;
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 14px;
 }
-
-/* Each photo in the gallery */
+ 
 .gallery-photo img {
     width: 100%;
     height: 220px;
@@ -237,11 +288,9 @@ header p {
     border-radius: 6px;
     border: 1px solid #ddd;
 }
-
-
-/* ── FOOTER ───────────────────────────────────────────
-   Small bar at the very bottom.
-──────────────────────────────────────────────────────── */
+ 
+ 
+/* ── FOOTER ───────────────────────────────────────────*/
 footer {
     text-align: center;
     padding: 20px;
@@ -250,19 +299,22 @@ footer {
     border-top: 1px solid #ccc;
     margin-top: 10px;
 }
-
-
-/* ── SMALL SCREENS (phones) ───────────────────────────
-   On narrow screens, cards shrink to 2 per row.
-──────────────────────────────────────────────────────── */
+ 
+ 
+/* ── SMALL SCREENS ────────────────────────────────────*/
 @media (max-width: 480px) {
     #plant-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         padding: 12px;
     }
-
+ 
     .gallery-grid {
         grid-template-columns: 1fr;
     }
+ 
+    .info-label {
+        width: 45%;
+    }
 }
+ 
