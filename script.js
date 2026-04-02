@@ -18,15 +18,15 @@ if (plants.length === 0) {
 
 // Loop through each plant and build its card
 plants.forEach((plant, index) => {
-    const card = document.createElement("div");
-    card.className = "plant-card";
+    const el = document.createElement("div");
+    el.className = "plant-card";
 
     // Use the thumb photo if provided, otherwise show a placeholder
     const imageHTML = plant.thumb
        ? `<div class="img-wrap"><? `<div class="img-wrap"><img src="${plant.thumb}" alt="${plant.name}" onerror="this.parentElement.outerHTML = getPlaceholder()"></div>`
         : getPlaceholder();
 
-    card.innerHTML = `
+    el.innerHTML = `
         ${imageHTML}
         <h3>${plant.name}</h3>
         <button>View Plant</button>
@@ -34,11 +34,11 @@ plants.forEach((plant, index) => {
 
     // Clicking anywhere on the card goes to the detail page
     // The index is passed in the URL so plant.js knows which plant to show
-    card.addEventListener("click", () => {
+    el.addEventListener("click", () => {
         window.location.href = `plant.html?id=${index}`;
     });
 
-    container.appendChild(card);
+    container.appendChild(el);
 });
 
 // Returns a placeholder box when a photo is missing or broken
