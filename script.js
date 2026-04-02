@@ -23,7 +23,7 @@ plants.forEach((plant, index) => {
 
     // Use the thumb photo if provided, otherwise show a placeholder
     const imageHTML = plant.thumb
-        ? `<img src="${plant.thumb}" alt="${plant.name}" onerror="this.parentElement.innerHTML = getPlaceholder()">`
+       ? `<div class="img-wrap"><img src="${plant.thumb}" alt="${plant.name}" onerror="this.parentElement.outerHTML = getPlaceholder()"></div>`
         : getPlaceholder();
 
     card.innerHTML = `
